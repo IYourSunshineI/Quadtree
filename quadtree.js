@@ -73,7 +73,9 @@ class Quadtree {
         rect(this.boundry.x, this.boundry.y, this.boundry.w, this.boundry.h);
         if(this.point){
             stroke(0);
-            circle(this.point.x, this.point.y, 2);
+            fill(0);
+            circle(this.point.x, this.point.y, 3);
+            fill(255);
         }
         if(this.isSubdivided){
            this.children.forEach(c => {

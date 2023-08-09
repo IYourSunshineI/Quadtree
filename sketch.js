@@ -12,13 +12,6 @@ function draw(){
     tree.draw();
 }
 
-function mouseMoved() {
-    if (mouseIsPressed) {
-        mouseDragged();
-    }
-    return false;
-}
-
 function mouseDragged() {
     tree.insert(new Point(mouseX, mouseY));
     return false;
